@@ -24,11 +24,13 @@
                 $(window).load(function(){
                     $(".content").mCustomScrollbar({
                         axis:"y", // horizontal scrollbar
-                        theme:"light-3"
+                        theme:"light-3",
+                        // чота не работает
+                        advanced:{ updateOnSelectorChange: "section" }
                     });
                 });
             })(jQuery);
-        </script>        
+        </script>
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,10 +46,10 @@
     </div>
     <div id="background">
         <aside>
-            <img id="pivnofflogo" src="img/pivnoff-logo.png"> 
+            <img id="pivnofflogo" src="img/pivnoff-logo.png">
             <p>Всегда свежие<br>сорта пива</p>
             <div id="pivnoffbanner">
-                <img  src="img/piv-ban.jpg"> 
+                <img  src="img/piv-ban.jpg">
             </div>
             <p>Адреса магазинов пивнофф</p>
             <div id="pivnoff_adresses_block" class="content">
@@ -76,17 +78,17 @@
         <header>
             <div id="navcontainer">
             <ul id="leftnav">
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">бар</a></li>
-                <li><a href="#">акции</a></li>
+                <li><a href="chunks/menu.html">Меню</a></li>
+                <li><a href="chunks/bar.html">бар</a></li>
+                <li><a href="chunks/actions.html">акции</a></li>
             </ul>
             <img src="img/cp-logo.png">
             <ul id="rightnav">
-                <li><a href="#">вакансии</a></li>
-                <li><a href="#">доставка</a></li>
-                <li><a href="#">партнеры</a></li>
-            </ul> 
-            </div>           
+                <li><a href="chunks/vacancies.html">вакансии</a></li>
+                <li><a href="chunks/delivery.html">доставка</a></li>
+                <li><a href="chunks/partners.html">партнёры</a></li>
+            </ul>
+            </div>
         </header>
 
         <section>
@@ -104,34 +106,34 @@
 
                 <ul class="bxslider">
                   <li>
-                      <article>                 
+                      <article>
                         <div class="imgcontainer">
                             <img src="img/menu/grill.jpg">
 
                             <div class="menu_title_txt">
                             <img src="img/lc.png" class="left_corner">
                             Блюда из мяса
-                            <img src="img/rc.png" class="right_corner">                            
+                            <img src="img/rc.png" class="right_corner">
                             </div>
                         </div>
                         <h3>Гриль</h3>
-                        <p>«Чешская пивная №1» покорит вас своим безупречным стилем и качеством. 
+                        <p>«Чешская пивная №1» покорит вас своим безупречным стилем и качеством.
                         </p>
                     </article>
                   </li>
                   <li>
-                    <article>                 
+                    <article>
                             <div class="imgcontainer">
                                 <img src="img/menu/grill.jpg">
 
                                 <div class="menu_title_txt">
                                 <img src="img/lc.png" class="left_corner">
                                 Блюда из Рыбы
-                                <img src="img/rc.png" class="right_corner">                            
+                                <img src="img/rc.png" class="right_corner">
                                 </div>
                             </div>
                             <h3>Распечатай купон</h3>
-                            <p>Здесь можно распечатать купон на скидку 
+                            <p>Здесь можно распечатать купон на скидку
                             </p>
                     </article>
                   </li>
@@ -148,51 +150,51 @@
                         <div class="menu_title_txt">
                         <img src="img/lc.png" class="left_corner">
                         блюда на компанию
-                        <img src="img/rc.png" class="right_corner">                            
+                        <img src="img/rc.png" class="right_corner">
                         </div>
                     </div>
                 </article>
-                
-                <article>                    
+
+                <article>
                     <div class="imgcontainer">
                         <img src="img/menu/kolb.jpg">
                         <div class="menu_title_txt">
                         <img src="img/lc.png" class="left_corner">
                         колбасы
-                        <img src="img/rc.png" class="right_corner">                            
+                        <img src="img/rc.png" class="right_corner">
                         </div>
                     </div>
                 </article>
 
-                <article>                    
+                <article>
                     <div class="imgcontainer">
                         <img src="img/menu/chicken.jpg">
                         <div class="menu_title_txt">
                         <img src="img/lc.png" class="left_corner">
                         горячие блюда из мяса и птицы
-                        <img src="img/rc.png" class="right_corner">                            
+                        <img src="img/rc.png" class="right_corner">
                         </div>
                     </div>
                 </article>
 
-                <article>                    
+                <article>
                     <div class="imgcontainer">
                         <img src="img/menu/salad.jpg">
                         <div class="menu_title_txt">
                         <img src="img/lc.png" class="left_corner">
                         салаты
-                        <img src="img/rc.png" class="right_corner">                            
+                        <img src="img/rc.png" class="right_corner">
                         </div>
                     </div>
                 </article>
 
-                <article>                    
+                <article>
                     <div class="imgcontainer">
                         <img src="img/menu/desert.jpg">
                         <div class="menu_title_txt">
                         <img src="img/lc.png" class="left_corner">
                         десерты
-                        <img src="img/rc.png" class="right_corner">                            
+                        <img src="img/rc.png" class="right_corner">
                         </div>
                     </div>
                 </article>
@@ -205,11 +207,15 @@
         <a href="http://onecoffee.ru/"><img id="onecoffee" src="img/onecoffee.png"></a>
         <p>
             2014© Ресторан «Чешская Пивная №1»
-        </p>            
+        </p>
 
         </footer>
 
     </div>
         <script src="js/main.js"></script>
+        <script src="js/ajaxContentLoader.js"></script>
+        <style type="text/css">
+            @import "css/ajaxContentLoader.css";
+        </style>
     </body>
 </html>
